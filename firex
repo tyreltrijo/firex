@@ -1,11 +1,7 @@
-print("Thank you for using Fire X Hub!")
- 
--- Notification - Loaded |
- 
 game:GetService("StarterGui"):SetCore("SendNotification",{
-            Title = "Fire X";
-            Text = "Made by Tyrel Batutuy";
-                    })
+    Title = "Fire X";
+    Text = "Made by tyrel batutuy";
+            })
 
 wait(5)
 local ScreenGui = Instance.new("ScreenGui")
@@ -16,6 +12,7 @@ local Close = Instance.new("TextButton")
 local Pageholder = Instance.new("Frame")
 local Fe1 = Instance.new("TextButton")
 local Fe2 = Instance.new("TextButton")
+local Fe3 = Instance.new("TextButton")
 local Net1 = Instance.new("TextButton")
 local _2page = Instance.new("Frame")
 local Creeper = Instance.new("TextButton")
@@ -46,6 +43,19 @@ local Creep = Instance.new("TextButton")
 local UICorner_12 = Instance.new("UICorner")
 local Spider = Instance.new("TextButton")
 local UICorner_13 = Instance.new("UICorner")
+local _3page = Instance.new("Frame")
+local Gale = Instance.new("TextButton")
+local UICorner_14 = Instance.new("UICorner")
+local Tall = Instance.new("TextButton")
+local UICorner_15 = Instance.new("UICorner")
+local Swim = Instance.new("TextButton")
+local UICorner_16 = Instance.new("UICorner")
+local Death = Instance.new("TextButton")
+local UICorner_17 = Instance.new("UICorner")
+local Walls = Instance.new("TextButton")
+local UICorner_18 = Instance.new("UICorner")
+local Mage = Instance.new("TextButton")
+local UICorner_19 = Instance.new("UICorner")
 
 --Properties:
 
@@ -75,6 +85,7 @@ TextLabel.Text = "Fire X Hub (No Hat Version)"
 TextLabel.TextColor3 = Color3.fromRGB(226, 147, 36)
 TextLabel.TextSize = 15.000
 
+Close.Name = "Close"
 Close.Parent = label
 Close.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 Close.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -86,7 +97,7 @@ Close.TextColor3 = Color3.fromRGB(226, 147, 36)
 Close.TextSize = 28.000
 Close.TextWrapped = true
 Close.MouseButton1Click:Connect(function()
-	main.Visible = false
+    main.Visible = false
 end)
 
 Pageholder.Name = "Pageholder"
@@ -107,11 +118,11 @@ Fe1.Text = "Fe Scripts 1"
 Fe1.TextColor3 = Color3.fromRGB(226, 147, 36)
 Fe1.TextSize = 14.000
 Fe1.MouseButton1Click:Connect(function()
-	_1page.Visible = true
-	_2page.Visible = false
     Netpage.Visible = false
+    _2page.Visible = false
+    _3page.Visible = false
+    _1page.Visible = true
 end)
-
 
 Fe2.Name = "Fe2"
 Fe2.Parent = Pageholder
@@ -124,30 +135,50 @@ Fe2.Text = "Fe Scripts 2"
 Fe2.TextColor3 = Color3.fromRGB(226, 147, 36)
 Fe2.TextSize = 14.000
 Fe2.MouseButton1Click:Connect(function()
-    _2page.Visible = true
-	_1page.Visible = false
     Netpage.Visible = false
+    _2page.Visible = true
+    _3page.Visible = false
+    _1page.Visible = false
+end)
+
+Fe3.Name = "Fe3"
+Fe3.Parent = Pageholder
+Fe3.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+Fe3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Fe3.Position = UDim2.new(0, 0, 0.324999988, 0)
+Fe3.Size = UDim2.new(0, 68, 0, 29)
+Fe3.Font = Enum.Font.SourceSans
+Fe3.Text = "Fe Scripts 3"
+Fe3.TextColor3 = Color3.fromRGB(226, 147, 36)
+Fe3.TextSize = 14.000
+Fe3.MouseButton1Click:Connect(function()
+    Netpage.Visible = false
+    _2page.Visible = false
+    _3page.Visible = true
+    _1page.Visible = false
 end)
 
 Net1.Name = "Net1"
 Net1.Parent = Pageholder
 Net1.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
 Net1.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Net1.Position = UDim2.new(0, 0, 0.324999988, 0)
+Net1.Position = UDim2.new(0, 0, 0.479166657, 0)
 Net1.Size = UDim2.new(0, 68, 0, 29)
 Net1.Font = Enum.Font.SourceSans
 Net1.Text = "Netless Bypass"
 Net1.TextColor3 = Color3.fromRGB(226, 147, 36)
 Net1.TextSize = 12.000
 Net1.MouseButton1Click:Connect(function()
-     Netpage.Visible = true
-     _1page.Visible = false
-     _2page.Visible = false
+    Netpage.Visible = true
+    _2page.Visible = false
+    _3page.Visible = false
+    _1page.Visible = false
 end)
 
 _2page.Name = "2page"
 _2page.Parent = main
 _2page.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+_2page.BorderColor3 = Color3.fromRGB(0, 0, 0)
 _2page.Position = UDim2.new(0.166666687, 0, 0.0909090936, 0)
 _2page.Size = UDim2.new(0, 340, 0, 240)
 
@@ -162,7 +193,7 @@ Creeper.TextColor3 = Color3.fromRGB(226, 147, 36)
 Creeper.TextSize = 20.000
 Creeper.MouseButton1Down:connect(function()
     loadstring(game:HttpGet('https://pastebin.com/raw/R7Hee4dW'))()
-    end)
+end)
 
 UICorner.Parent = Creeper
 
@@ -191,7 +222,7 @@ Winged.Text = "Fe Winged Master"
 Winged.TextColor3 = Color3.fromRGB(226, 147, 36)
 Winged.TextSize = 20.000
 Winged.MouseButton1Down:connect(function()
-    loadstring(game:HttpGet('https://pastebin.com/raw/0x8M7CcE'))()
+    loadstring(game:HttpGet('https://pastebin.com/raw/G68Krc4Q'))()
     end)
 
 UICorner_3.Parent = Winged
@@ -206,7 +237,7 @@ Car.Text = "Fe Human Car"
 Car.TextColor3 = Color3.fromRGB(226, 147, 36)
 Car.TextSize = 20.000
 Car.MouseButton1Down:connect(function()
-    loadstring(game:HttpGet('https://pastebin.com/raw/Vkw5MVJX'))()
+    loadstring(game:HttpGet('https://pastebin.com/raw/YbEir502'))()
     end)
 
 UICorner_4.Parent = Car
@@ -236,7 +267,7 @@ Parkour.Text = "Fe Parkour V2"
 Parkour.TextColor3 = Color3.fromRGB(226, 147, 36)
 Parkour.TextSize = 20.000
 Parkour.MouseButton1Down:connect(function()
-    loadstring(game:HttpGet('https://pastebin.com/raw/Fuz7GRZ5'))()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/tyreltrijo/Parkour/main/Fe%20Parkour'))()
     end)
 
 UICorner_6.Parent = Parkour
@@ -244,6 +275,7 @@ UICorner_6.Parent = Parkour
 Netpage.Name = "Netpage"
 Netpage.Parent = main
 Netpage.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+Netpage.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Netpage.Position = UDim2.new(0.166666687, 0, 0.0909091383, 0)
 Netpage.Size = UDim2.new(0, 340, 0, 240)
 
@@ -265,7 +297,8 @@ UICorner_7.Parent = Net
 _1page.Name = "1page"
 _1page.Parent = main
 _1page.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
-_1page.Position = UDim2.new(0.166666672, 0, 0.0909090936, 0)
+_1page.BorderColor3 = Color3.fromRGB(0, 0, 0)
+_1page.Position = UDim2.new(0.164215714, 0, 0.0909090936, 0)
 _1page.Size = UDim2.new(0, 340, 0, 240)
 
 Among.Name = "Among"
@@ -323,7 +356,7 @@ Curse.Text = "Fe Cursed Spider"
 Curse.TextColor3 = Color3.fromRGB(226, 147, 36)
 Curse.TextSize = 20.000
 Curse.MouseButton1Down:connect(function()
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/tyreltrijo/Cursed/main/Spdier'))()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/tyreltrijo/Cursed/main/Spider'))()
     end)
 
 UICorner_11.Parent = Curse
@@ -338,7 +371,7 @@ Creep.Text = "Fe Creepy Crawler"
 Creep.TextColor3 = Color3.fromRGB(226, 147, 36)
 Creep.TextSize = 20.000
 Creep.MouseButton1Down:connect(function()
-    loadstring(game:HttpGet('https://pastebin.com/raw/R7Hee4dW'))()
+    loadstring(game:HttpGet('https://pastebin.com/raw/eMmgNCQV'))()
     end)
 
 UICorner_12.Parent = Creep
@@ -353,7 +386,104 @@ Spider.Text = "Fe Spider"
 Spider.TextColor3 = Color3.fromRGB(226, 147, 36)
 Spider.TextSize = 20.000
 Spider.MouseButton1Down:connect(function()
-    loadstring(game:HttpGet('https://pastebin.com/raw/XvvKDBrA'))()
+    loadstring(game:HttpGet('https://pastebin.com/raw/txsk1LJg'))()
     end)
 
 UICorner_13.Parent = Spider
+
+_3page.Name = "3page"
+_3page.Parent = main
+_3page.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+_3page.BorderColor3 = Color3.fromRGB(0, 0, 0)
+_3page.Position = UDim2.new(0.166666627, 0, 0.0909091234, 0)
+_3page.Size = UDim2.new(0, 340, 0, 240)
+
+Gale.Name = "Gale"
+Gale.Parent = _3page
+Gale.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+Gale.Position = UDim2.new(0.182352945, 0, 0.0458333343, 0)
+Gale.Size = UDim2.new(0, 206, 0, 29)
+Gale.Font = Enum.Font.SourceSans
+Gale.Text = "Fe Gale FIghter"
+Gale.TextColor3 = Color3.fromRGB(226, 147, 36)
+Gale.TextSize = 20.000
+Gale.MouseButton1Down:connect(function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/haBVC7bj'))()
+    end)
+
+UICorner_14.Parent = Gale
+
+Tall.Name = "Tall"
+Tall.Parent = _3page
+Tall.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+Tall.Position = UDim2.new(0.182352945, 0, 0.187500015, 0)
+Tall.Size = UDim2.new(0, 206, 0, 29)
+Tall.Font = Enum.Font.SourceSans
+Tall.Text = "Fe Tall R15"
+Tall.TextColor3 = Color3.fromRGB(226, 147, 36)
+Tall.TextSize = 20.000
+Tall.MouseButton1Down:connect(function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/MXstG0Qd'))()
+    end)
+
+UICorner_15.Parent = Tall
+
+Swim.Name = "Swim"
+Swim.Parent = _3page
+Swim.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+Swim.Position = UDim2.new(0.182352945, 0, 0.333333343, 0)
+Swim.Size = UDim2.new(0, 206, 0, 29)
+Swim.Font = Enum.Font.SourceSans
+Swim.Text = "Fe Swim"
+Swim.TextColor3 = Color3.fromRGB(226, 147, 36)
+Swim.TextSize = 20.000
+Swim.MouseButton1Down:connect(function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/9CK0qSgn'))()
+    end)
+
+UICorner_16.Parent = Swim
+
+Death.Name = "Death"
+Death.Parent = _3page
+Death.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+Death.Position = UDim2.new(0.182352945, 0, 0.479166687, 0)
+Death.Size = UDim2.new(0, 206, 0, 29)
+Death.Font = Enum.Font.SourceSans
+Death.Text = "Fe Death Note"
+Death.TextColor3 = Color3.fromRGB(226, 147, 36)
+Death.TextSize = 20.000
+Death.MouseButton1Down:connect(function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/Y51KHiXb'))()
+    end)
+
+UICorner_17.Parent = Death
+
+Walls.Name = "Walls"
+Walls.Parent = _3page
+Walls.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+Walls.Position = UDim2.new(0.182352945, 0, 0.633333325, 0)
+Walls.Size = UDim2.new(0, 206, 0, 29)
+Walls.Font = Enum.Font.SourceSans
+Walls.Text = "Fe Walk On Walls"
+Walls.TextColor3 = Color3.fromRGB(226, 147, 36)
+Walls.TextSize = 20.000
+Walls.MouseButton1Down:connect(function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/zXk4Rq2r"))()
+    end)
+
+UICorner_18.Parent = Walls
+
+Mage.Name = "Mage"
+Mage.Parent = _3page
+Mage.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+Mage.Position = UDim2.new(0.182352945, 0, 0.779166639, 0)
+Mage.Size = UDim2.new(0, 206, 0, 29)
+Mage.Font = Enum.Font.SourceSans
+Mage.Text = "Fe Mage"
+Mage.TextColor3 = Color3.fromRGB(226, 147, 36)
+Mage.TextSize = 20.000
+Mage.MouseButton1Down:connect(function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/bWpFGdU7'))()
+    end)
+
+UICorner_19.Parent = Mage
